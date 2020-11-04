@@ -1,0 +1,1 @@
+SELECT people.name FROM ((directors JOIN people ON directors.person_id = people.id) JOIN movies ON directors.movie_id = movies.id),ratings WHERE movies.id = ratings.movie_id AND ratings.rating >=9.0 GROUP BY people.id

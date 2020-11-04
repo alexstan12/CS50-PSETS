@@ -1,0 +1,1 @@
+SELECT p.name AS 'Name' FROM people AS p, stars AS s, movies AS m WHERE m.title = 'Toy Story' AND p.id = s.person_id AND s.movie_id= m.id
